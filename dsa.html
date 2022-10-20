@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   
     <title>Document</title>
+  <script>
+  let data = [2,23,24,32,43,56,77,76,88]
 
-    <script>
-        let data = [2,3,4,5,6,7,8,2,3]
-        for(let i=0; i<data.length; i++){
-            console.log(data[i])
-        }
-    </script>
+  const clicked =()=>{
+    let el = document.getElementById("imp").value;
+    if(el<data.length && typeof parseInt(el) ==="Number" && el>=0){
+        alert(data[i]);
+        
+
+    } 
+    else{
+        alert("not a valid number")
+    }
+  }
+
+  </script>
+    
 </head>
 <body>
-    
+    <input type="text" id="imp"/>
+    <button onclick="clicked()">
+      get element
+    </button>
 </body>
 </html>
