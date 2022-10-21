@@ -5,10 +5,11 @@
   <script>
   let data = [2,23,24,32,43,56,77,76,88]
 
-  const clicked =()=>{
+  function clicked() {
     let el = document.getElementById("imp").value;
-    if(el<data.length && typeof parseInt(el) ==="Number" && el>=0){
-        alert(data[i]);
+    console.log(data.length)
+    if(el<data.length && typeof parseInt(el) ==="number" ){
+        alert(data[el]);
         
 
     } 
