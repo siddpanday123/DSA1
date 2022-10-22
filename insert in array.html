@@ -6,14 +6,13 @@
 
     <script>
       
-
         function clicked(){
         let data = [20,23,22,65,56,78,98];
         let position =document.getElementById("position").value;
         position=parseInt(position);
+
         let el = document.getElementById("value").value;
         el=parseInt(el)
-
         console.log(data)
             for (let i = data.length-1; i >= 0 ; i--) {
                
@@ -24,9 +23,7 @@
                         data[i]=el;
 
                     }
-                }else{
-                        alert("plz inter a valid position")
-                    }
+                }
             }
             console.log(data)
         }
@@ -36,7 +33,7 @@
 </head>
 <body>
     <input placeholder="inter position" type="text" id="position"/>
-    <input placeholder="inter value" id="value"/>
+    <input placeholder="inter value" type="text"  id="value"/>
 
     <button onclick="clicked()">
       get element
