@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>deleting element from an array </title>
+    <script>
+
+         function clicked(){
+          
+        let data = [23,22,33,33,44,34,43];
+        let position = document.getElementById("position").value;
+        position = parseInt(position)
+        if(position<data.length){
+
+        for(let i = position; i<data.length-1;i++){
+             data[i]=data[i+1];
+        }
+
+        data.length=data.length-1
+        console.warn(data);
+        alert(data)
+    }else{
+        alert("inter a valid position ")
+    }
+
+         }
+    </script>
+</head>
+<body>
+    <input placeholder="inter position to delete "  type="text" id="position"/>
+    <button onclick="clicked()"> click to delete</button>
+
+</body>
+</html>
