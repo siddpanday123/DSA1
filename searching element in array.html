@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>searching element in array (linear method)</title>
+    <script>
+   // let data=[20,30,40,50,60,70,80,90];
+    //let item = 30;
+    //let index = undefined;
+     
+    //for(i=0;i<data.length-1;i++)
+   // {
+        //console.warn(data[i])
+        //if(data[i]===item){
+
+          //  index = i;
+            //break;
+        //}
+    //}
+    //console.warn(index);
+    //console.warn(data.indexOf(item)) by default method of array in js
+      
+    function clicked(){
+    let data=[20,30,40,50,50,60,70,80,90];
+    let item =document.getElementById("position").value;
+    let index = [];
+
+    for(i=0;i<data.length;i++)
+    {
+        //console.warn(data[i])
+        if(data[i]===parseInt(item)){
+            
+            index.push(i);
+            
+            console.log(index)
+            
+        }else{
+            
+            console.log("not matching");
+            
+        }
+    }
+    }
+
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="inter element" id="position" />
+    <button onclick="clicked()">
+     check element
+
+    </button>
+
+</body>
+</html>
